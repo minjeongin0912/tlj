@@ -633,7 +633,7 @@ main {
 }
 
 .middle-row .store-search {
-  background-image: url(image/store_find.jpg);
+  background-image: url(../image/store_find.jpg);
   width: 550px;
   height: 250px;
   background-position: center;

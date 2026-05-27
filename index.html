@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="뚜레쥬르 — 매일 신선한 갓 구운 빵" />
+  <title>TOUS les JOURS | 뚜레쥬르</title>
+
+  <!-- NanumBarunGothic (네이버 한글 폰트) -->
+  <link rel="preconnect" href="https://hangeul.pstatic.net" />
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER (이미지 기준)
+       - 좌: SNS 아이콘(facebook/tumblr/instagram) + 검색 버튼
+       - 중앙: TOUS les JOURS 로고 (텍스트 타입, 이미지)
+       - 우: 복장안내 / 고객센터 / 기사채용안내 / Login 버튼 / 창업안내(녹색 박스 버튼)
+  ============================================================ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+  
+      <div class="header-left">
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+  
+        <div class="search-box">
+          <input type="text" placeholder="제품을 입력해주세요." />
+          <button class="search-btn" type="button" aria-label="검색 열기">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="close-btn" type="button" aria-label="검색 닫기">
+            <i class="fa-solid mainfa-xmark"></i>
+          </button>
+        </div>
+      </div>
+  
+      <h1 class="logo">
+        <a href="#">
+          <img src="image/t_logo.png" alt="TOUS les JOURS">
+        </a>
+      </h1>
+  
+      <div class="util">
+        <ul>
+          <li><a href="#">매장안내</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">기사 채용안내</a></li>
+        </ul>
+      
+        <button type="button" class="login-btn">Login</button>
+      
+        
+      </div>
+      <a href="#none" class="startup-btn">
+        <img src="image/menu_point.png" alt="창업안내">
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       GNB (Global Navigation Bar)
+       ※ 실제 메뉴 5개 (이미지 기준):
+       - 브랜드 소식
+       - 제품
+       - 이벤트&멤버십
+       - 제품혜택&기프트카드
+       - 뚜레쥬르 앱&온라인 쇼핑몰
+       - sticky 상단 고정 / 다크 그린 배경
+  ============================================================ -->
+  <nav class="gnb" id="gnb">
+    <ul>
+      <li>
+        <a href="#none">브랜드 소식</a>
+        <div class="sub-menu">
+          <a href="#none">브랜드 스토리 </a>
+          <a href="#none">글로벌 뚜레쥬르 </a>
+          <a href="#none">뚜레쥬르 라뜰리에</a>
+          <a href="#none">뚜레쥬르 광고</a>
+          <a href="#none">뉴스&공지사항</a>
+        </div>
+      </li>
+      <li>
+        <a href="#none">제품</a>
+        <div class="sub-menu">
+          <a href="#none">NEW </a>
+          <a href="#none">빵</a>
+          <a href="#none">케이크</a>
+          <a href="#none">델리</a>
+          <a href="#none">디저트&스낵</a>
+          <a href="#none">선물</a>
+          <a href="#none">음료</a>
+        </div>
+      </li>
+        
+      <li>
+        <a href="#none">이벤트&멤버십</a>
+        <div class="sub-menu">
+          <a href="#none">진행중인 이벤트 </a>
+          <a href="#none">이벤트 당첨자 </a>
+          <a href="#none">CJ ONE 멤버십 </a>
+        </div>
+      </li>
+       <li>
+        <a href="#none">제휴혜택&기프트카드</a>
+        <div class="sub-menu">
+          <a href="#none">제휴해택 </a>
+          <a href="#none">기프트카드</a>
+        </div>
+       </li>
+       <li>
+        <a href="#none">뚜레쥬르 앱& 온라인 쇼핑몰</a>
+        <div class="sub-menu">
+          <a href="#none">뚜레쥬르 앱</a>
+          <a href="#none">홈페이지 전용 예약 배송</a>
+          <a href="#none">꽃&케이크 택배 배송</a>
+          <a href="#none">대량 구매 문의</a>
+        </div>
+       </li>
+        
+   
+    </ul>
+  </nav>
+   <!-- MAIN ① visual : 풀화면 배너 -->
+   <section class="visual" id="visual">
+
+    <a href="#none"><img src="image/3_main_visual.jpg" alt=""></a>
+    <!-- 큰 빵 이미지 -->
+  </section>
+  <div class="visual-spacer"></div>
+  <main>
+  
+    <!-- 베이지 배경 전체 영역 -->
+<section class="main-area">
+  <div class="inner">
+
+    <!-- MAIN ② + MAIN ③ -->
+    <div class="top-row">
+
+      <!-- 왼쪽 이벤트 배너 -->
+      <article class="event-card">
+        <div class="event-slide-list">
+          <a href="#none" class="event-slide active">
+            <img src="image/imgi_4_2026-5-13_event.jpg" alt="T day 이벤트">
+          </a>
+          <a href="#none" class="event-slide">
+            <img src="image/imgi_5_2026-4-23_event.jpg" alt="이벤트 배너">
+          </a>
+          <a href="#none" class="event-slide">
+            <img src="image/imgi_6_2026-4-13_event(2).jpg" alt="이벤트 배너">
+          </a>
+          <a href="#none" class="event-slide">
+            <img src="image/imgi_7_2025-12-31_event.jpg" alt="이벤트 배너">
+          </a>
+        </div>
+
+        <div class="event-control">
+          <button class="event-dot active" type="button" aria-label="1번 이벤트"></button>
+          <button class="event-dot" type="button" aria-label="2번 이벤트"></button>
+          <button class="event-dot" type="button" aria-label="3번 이벤트"></button>
+          <button class="event-dot" type="button" aria-label="4번 이벤트"></button>
+
+          <button class="event-play-btn" type="button" aria-label="자동재생 멈춤">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+        </div>
+      </article>
+
+      <!-- 오른쪽 추천 제품 -->
+      <article class="product-card">
+        <div class="recommend-label">
+          <img src="image/8_lb_recomm.png" alt="TOUS les JOURS 추천제품">
+        </div>
+
+        <button class="product-arrow product-prev" type="button" aria-label="이전 추천제품">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="product-page-list">
+
+          <!-- 1페이지 -->
+          <div class="product-page active">
+            <div class="product-big product-item">
+              <img src="image/imgi_9_2026-4-8_event(14).jpg" alt="블루밍 트리">
+              <div class="product-info">
+                <p>사랑의 꽃이 피어나는 무드만점 케이크</p>
+                <a href="#none">MORE</a>
+              </div>
+              <h3>블루밍 트리</h3>
+              <span class="cake-label">Cake</span>
+            </div>
+
+            <div class="product-small-wrap">
+              <div class="product-small product-item">
+                <img src="image/imgi_10_2026-4-8_event(20).jpg" alt="다이아니파 과일라스핑">
+                <div class="product-info">
+                  <p>화려한 장식이 돋보이는 케이크</p>
+                  <a href="#none">MORE</a>
+                </div>
+                <h3>다이아니파 과일라스핑...</h3>
+                <span class="cake-label">Cake</span>
+              </div>
+
+              <div class="product-small product-item">
+                <img src="image/imgi_11_2026-4-8_event(26).jpg" alt="플라워 몽마르뜨">
+                <div class="product-info">
+                  <p>
+               가정의 달 케이크</p>
+                  <a href="#none">MORE</a>
+                </div>
+                <h3>플라워 몽마르뜨</h3>
+                <span class="cake-label">Cake</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2페이지 -->
+          <div class="product-page">
+            <div class="product-big product-item">
+              <img src="image/imgi_12_2026-4-8_event(47).jpg" alt="스페셜 케이크">
+              <div class="product-info">
+                <p>특별한 날을 위한 달콤한 케이크</p>
+                <a href="#none">MORE</a>
+              </div>
+              <h3>스페셜 케이크</h3>
+              <span class="cake-label">Cake</span>
+            </div>
+
+            <div class="product-small-wrap">
+              <div class="product-small product-item">
+                <img src="image/imgi_13_2026-4-8_event(29).jpg" alt="크림 데코 케이크">
+                <div class="product-info">
+                  <p>부드러운 크림이 돋보이는 케이크</p>
+                  <a href="#none">MORE</a>
+                </div>
+                <h3>크림 데코 케이크</h3>
+                <span class="cake-label">Cake</span>
+              </div>
+
+              <div class="product-small product-item">
+                <img src="image/imgi_14_2026-4-8_event(32).jpg" alt="미니 데코 케이크">
+                <div class="product-info">
+                  <p>선물하기 좋은 미니 케이크</p>
+                  <a href="#none">MORE</a>
+                </div>
+                <h3>미니 데코 케이크</h3>
+                <span class="cake-label">Cake</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3페이지 -->
+          <div class="product-page">
+            <div class="product-big product-item">
+              <img src="image/imgi_15_2026-4-15_event(11).jpg" alt="시즌 플라워 케이크">
+              <div class="product-info">
+                <p>봄날의 분위기를 담은 시즌 케이크</p>
+                <a href="#none">MORE</a>
+              </div>
+              <h3>시즌 플라워 케이크</h3>
+              <span class="cake-label">Cake</span>
+            </div>
+
+            <div class="product-small-wrap">
+              <div class="product-small product-item">
+                <img src="image/imgi_16_2026-4-15_event(14).jpg" alt="스윗 시즌 케이크">
+                <div class="product-info">
+                  <p>상큼한 포인트가 있는 케이크</p>
+                  <a href="#none">MORE</a>
+                </div>
+                <h3>스윗 시즌 케이크</h3>
+                <span class="cake-label">Cake</span>
+              </div>
+
+              <div class="product-small product-item">
+                <img src="image/imgi_17_2026-4-15_event(5).jpg" alt="미니 시즌 케이크">
+                <div class="product-info">
+                  <p>작지만 완성도 높은 기념일 케이크</p>
+                  <a href="#none">MORE</a>
+                </div>
+                <h3>미니 시즌 케이크</h3>
+                <span class="cake-label">Cake</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="product-arrow product-next" type="button" aria-label="다음 추천제품">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </article>
+
+    </div>
+
+    <!-- MAIN ④ shop-banner -->
+    <section class="shop-banner">
+      <a href="#none"><img src="image/section_banner.jpg" alt=""></a>
+    </section>
+
+    <!-- MAIN ⑤ + MAIN ⑥ -->
+    <div class="middle-row">
+      <article class="store-search">
+        <div class="store-search-content">
+          <form class="store-search-form">
+            <input type="text" placeholder="매장명이나 시/군/구 명 입력">
+            <button type="submit" aria-label="매장 검색">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>        
+        </div>           
+      </article>
+    
+      <article class="membership">
+        <a href="#none"><img src="image/banner6.jpg" alt=""></a>
+      </article>
+    </div>
+
+    <!-- MAIN ⑦ + MAIN ⑧ + MAIN ⑨ -->
+    <div class="bottom-row">
+      <article class="franchise">
+        <a href="#none">
+          <img src="image/img_banner1.jpg" alt="창업안내">
+        </a>
+      </article>
+    
+      <article class="recruit">
+        <a href="#none">
+          <img src="image/img_banner2.jpg" alt="기사 채용 안내">
+        </a>
+      </article>
+    
+      <article class="notice">
+        <div class="notice-title">
+          <img src="image/notice_news.png" alt="News & Notice">
+        </div>
+        <button type="button" class="notice-more" aria-label="공지사항 더보기">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <ul class="notice-list">
+          
+          <li>
+            <a href="#none">위치기반 서비스 이용약관 개정 고지</a>
+          </li>
+          <li>
+            <a href="#none">CJ푸드빌 통합 이용약관 개정 고지</a>
+          </li>
+          <li>
+            <a href="#none">CJ푸드빌 개인정보처리방침 개정 고지</a>
+          </li>
+        </ul>
+    
+        
+      </article>
+    </div>
+</section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER (이미지 기준, 배경 흰색 #ffffff)
+       - 1행: CJ 계열 패밀리사이트 로고 (CJ푸드빌 / VIPS / PLACE / 빕스백반 / n-GRILL / NASSOL TOWER)
+       - 2행: 텍스트 링크 — 회사소개 / 기사채용안내 / 이용약관 / 위치기반서비스이용약관 / 창업안내 / 개인정보처리방침 / 영상정보처리기기운영관리방침 / 이메일무단수집거부 / 온라인신고센터 / 법적고지 / 사이트맵
+       - 3행: 사업자 정보 (CJ푸드빌(주) / 주소 / 고객전화 / 통신판매업신고 / 사업자등록번호 / 대표이사 / 개인정보보호책임자)
+       - 하단: COPYRIGHT 2026ⓒCJ Foodville ALL RIGHT RESERVED.
+  ============================================================ -->
+  <footer class="footer" id="footer">
+
+    <section class="footer-partners">
+      <div class="footer-inner">
+        <a href="#none">
+          <img src="image/common.png" alt="CJ푸드빌 제휴 브랜드">
+        </a>
+      </div>
+    </section>
+  
+    <section class="footer-bottom">
+      <div class="footer-inner">
+  
+        <ul class="footer-policy">
+          <li><a href="#none">회사소개</a></li>
+          <li><a href="#none">기사 채용안내</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">위치기반서비스 이용약관</a></li>
+          <li><a href="#none">창업안내</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">영상정보처리기기 운영관리방침</a></li>
+          <li><a href="#none">이메일무단수집거부</a></li>
+          <li><a href="#none">윤리신고센터</a></li>
+          <li><a href="#none">법적고지</a></li>
+          <li><a href="#none">사이트맵</a></li>
+        </ul>
+  
+        <div class="footer-info">
+          <p>상호명 : CJ푸드빌(주) 주소 : 우)04555 서울시 중구 마른내로34 초동 106-9번지 KT&amp;G을지로타워 3, 9-11층 CJ푸드빌㈜</p>
+          <p>
+            고객센터 : 1577-0700 통신판매업종신고증 제 2011-서울중구-0771호
+            <button type="button">사업자정보확인</button>
+            호스팅제공자 : CJ올리브네트웍스㈜
+          </p>
+          <p>사업자등록번호 : 312-81-42519 대표이사 : 이주원 개인정보보호책임자 : 김재완 대표 이메일 : helpmaster@cj.net</p>
+        </div>
+  
+        <p class="footer-copy">
+          COPYRIGHT 2026© CJ Foodville ALL RIGHT RESERVED.
+        </p>
+  
+      </div>
+    </section>
+  
+  </footer>
+  <button type="button" class="go-top" aria-label="맨 위로 이동">
+    <i class="fa-solid fa-chevron-up"></i>
+    <span>TOP</span>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>

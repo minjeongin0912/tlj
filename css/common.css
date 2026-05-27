@@ -1,0 +1,187 @@
+/* ========================================
+   COMMON CSS — CSS Variables & Shared Styles
+======================================== */
+
+/* NanumBarunGothic 웹폰트 */
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css');
+
+:root {
+  /* ---- 폰트 ---- */
+  --font-primary: 'NanumBarunGothic', 'Nanum Barun Gothic', 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+
+  /* ---- 브랜드 컬러 ---- */
+  /* 메인 그린 계열 — 이미지 실측 기준 */
+  --color-main:        #2e6b35;   /* TLJ 시그니처 그린 (GNB 실측) */
+  --color-main-dark:   #1A4A31;   /* 진한 그린 (GNB 배경, shop-banner) */
+  --color-main-light:  #eeffa1c0;   /* 연한 그린 (hover 배경) */
+  --color-main-mid:    #488f50;   /* 중간 그린 (hover, 버튼) */
+
+  /* 서브 컬러 — 오렌지/골드 (CTA 버튼, 포인트) */
+  --color-sub:         #e87722;   /* TLJ 오렌지 (T-day 이벤트 포인트) */
+  --color-sub-light:   #F7F0DA;   /* 연한 오렌지 배경 */
+  --color-sub-warm:    #f5a623;   /* 골드/앰버 (이벤트 강조) */
+
+  /* 배경 컬러 — 이미지 실측 */
+  --color-bg-white:    #ffffff;
+  --color-bg-cream:    #f5f0e8;   /* main-contents/info-section 크림 베이지 */
+  --color-bg-light:    #f8f5f0;   /* 밝은 크림 */
+  --color-bg-dark:     #153A25;   /* shop-banner 다크 그린 */
+  --color-bg-footer:   #ffffff;   /* footer: 흰 배경 (이미지 확인) */
+  --color-bg-black:    #111111;
+
+  /* 폰트 컬러 */
+  --color-text-dark:       #222222;   /* 기본 어두운 텍스트 */
+  --color-text-mid:        #444444;   /* 중간 텍스트 */
+  --color-text-muted:      #888888;   /* 흐린 텍스트 */
+  --color-text-light:      #ffffff;   /* 밝은 텍스트 */
+  --color-text-light-muted: rgba(255,255,255,0.70);
+  --color-text-green:      #2e6b35;   /* 그린 텍스트 (--color-main과 통일) */
+
+  /* 보더 */
+  --color-border:          #e0e0e0;
+  --color-border-dark:     rgba(0,0,0,0.12);
+  --color-border-light:    rgba(255,255,255,0.15);
+
+  /* ---- 레이아웃 ---- */
+  /* 뚜레쥬르 사이트 기준: 콘텐츠 영역 1100px, 섹션 상하 패딩 50px */
+  --inner-width:        1100px;
+  --padding-section:    25px;   /* 실측: inner 좌우 여백 약 25px */
+  --padding-section-sm: 30px;
+
+  /* ---- 타이포그래피 ---- */
+  --font-size-xs:   0.75rem;    /* 12px */
+  --font-size-sm:   0.8125rem;  /* 13px */
+  --font-size-base: 0.875rem;   /* 14px */
+  --font-size-md:   1rem;       /* 16px */
+  --font-size-lg:   1.125rem;   /* 18px */
+  --font-size-xl:   1.375rem;   /* 22px */
+  --font-size-2xl:  1.75rem;    /* 28px */
+  --font-size-3xl:  2.25rem;    /* 36px */
+
+  /* ---- 트랜지션 ---- */
+  --transition-fast:  0.18s ease;
+  --transition-base:  0.3s ease;
+  --transition-slow:  0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* ---- 그림자 ---- */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.07);
+  --shadow-md:  0 6px 24px rgba(0,0,0,0.10);
+  --shadow-lg:  0 16px 48px rgba(0,0,0,0.14);
+
+  /* ---- 반경 ---- */
+  --radius-sm:   3px;
+  --radius-md:   6px;
+  --radius-lg:   12px;
+  --radius-full: 9999px;
+}
+
+/* ========================================
+   BODY & COMMON LAYOUT
+======================================== */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  color: var(--color-text-dark);
+  background-color: var(color-sub-warm);
+  word-break: keep-all;
+  overflow-x: hidden;
+  padding-top: 140px; 
+}
+
+.inner {
+  width: 100%;
+  max-width: var(--inner-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-section);
+}
+
+/* ========================================
+   COMMON BUTTON
+======================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 24px;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-base);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-main);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-main);
+}
+.btn-primary:hover {
+  background-color: var(--color-main-dark);
+  border-color: var(--color-main-dark);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
+}
+.btn-outline:hover {
+  background-color: var(--color-main);
+  color: var(--color-text-light);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--color-text-light);
+  border: 1px solid rgba(255,255,255,0.6);
+}
+.btn-outline-white:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* ========================================
+   SECTION TITLE COMMON
+======================================== */
+.section-eyebrow {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-main);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--color-text-dark);
+}
+
+.section-desc {
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-top: 12px;
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -82,10 +82,10 @@ body {
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
   color: var(--color-text-dark);
-  background-color: var(color-sub-warm);
+  background-color: var(--color-sub-light);
   word-break: keep-all;
-  overflow-x: hidden;
-  padding-top: 140px; 
+  overflow-x: clip;        /* hidden → clip */
+  padding-top: 140px;
 }
 
 .inner {

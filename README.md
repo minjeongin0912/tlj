@@ -30,9 +30,10 @@ HTML5 / CSS3 / JavaScript
 <br>
 
 ## 주요 기능
+<img width="1920" height="140" alt="Image" src="https://github.com/user-attachments/assets/1adf8ba6-4047-4b3f-9ccc-bb1c486abb62" />
 
 * 공통 헤더 구현
-
+<img width="331" height="96" alt="Image" src="https://github.com/user-attachments/assets/271fcd20-bf73-47b8-9f9d-c6927933a8ee" />
   * SNS 아이콘
   * 검색창 열기/닫기
   * 로고 중앙 정렬

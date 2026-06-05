@@ -34,30 +34,31 @@ HTML5 / CSS3 / JavaScript
 
 * 공통 헤더 구현
 <img width="331" height="96" alt="Image" src="https://github.com/user-attachments/assets/271fcd20-bf73-47b8-9f9d-c6927933a8ee" />
+
   * SNS 아이콘
   * 검색창 열기/닫기
   * 로고 중앙 정렬
   * 유틸 메뉴 및 창업안내 이미지 버튼
 
 * GNB 메뉴 구현
-
+<img width="1237" height="274" alt="Image" src="https://github.com/user-attachments/assets/0370d9dd-86ce-4720-8461-54ec26e083b6" />
   * 5개 주요 메뉴 구성
   * 마우스 hover 시 하위 메뉴 표시
   * `z-index`를 활용한 드롭다운 메뉴 겹침 처리
 
 * 메인 비주얼 영역 구현
-
+<img width="1920" height="650" alt="Image" src="https://github.com/user-attachments/assets/87141fd8-dfc5-4e13-9069-e89ec39fea65" />
   * 풀 와이드 이미지 배너
   * 이미지 비율 유지를 위한 `object-fit` 적용
 
 * 이벤트 배너 슬라이더 구현
-
+<img width="343" height="344" alt="Image" src="https://github.com/user-attachments/assets/1f2719a6-34b8-4a68-8d6c-c4381d7741c3" />
   * 4개 이벤트 이미지 자동 전환
   * 하단 dot 버튼 클릭 이동
   * 재생/멈춤 버튼 구현
 
 * 추천제품 영역 구현
-
+<img width="544" height="362" alt="Image" src="https://github.com/user-attachments/assets/4e869b4b-13d3-4265-8b64-b8b14b3f5372" />
   * 큰 제품 이미지와 작은 제품 이미지 2개 배치
   * 좌우 버튼 클릭 시 추천제품 페이지 이동
   * hover 시 제품 설명과 MORE 버튼 표시
